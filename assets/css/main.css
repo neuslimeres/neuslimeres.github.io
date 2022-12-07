@@ -1168,6 +1168,16 @@ h6 {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/Neus.jpg") top right -40vw;
+    background-size: cover;
+    position: relative;
+  }
+}
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.65);
@@ -1188,8 +1198,8 @@ h6 {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  padding: 0 15px;
-  margin-left: 150px;
+  padding: 0 5vw;
+  margin-left: 5vw;
 }
 
 #hero h1 {
@@ -1236,7 +1246,7 @@ h6 {
   }
 
   #hero h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
   }
 }
