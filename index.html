@@ -31,13 +31,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio - v1.1.1
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
   <style>
     .row>* {
       padding-right: calc(var(--bs-gutter-x) * 0.1);
@@ -56,573 +49,58 @@
 </head>
 
 <body>
+  <div class="mycontainer">
+    <!-- ======= CAPÇALERA ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top header-transparent">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
 
-  <!-- ======= CAPÇALERA ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top header-transparent">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+          <h1 style='font-family: "Amatic SC", serif;'>Neus Limeres</h1>
+        </a>
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- <h1 style='font-family: "Amatic SC", serif;'>Neus Limeres</h1> -->
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Galeria</a></li>
-          <li><a href="about.html">Sobre mi</a></li>
-          <li><a href="services.html">Serveis</a></li>
-          <li><a href="contact.html">Contacte</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="https://www.linkedin.com/in/neus-limeres/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header>
-
-  <!-- ======= PORTADA ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <h1>Neus Limeres</h1>
-      <h2>Projectes de Visualització Arquitectònica</h2>
-      <a href="#portfolio" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
-    </div>
-  </section>
-
-  <!-- ======= DESCRIPCIONS PROJECTES ======= -->
-  <div class="modal fade right" id="info-fusteria" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <h4>La Fusteria</h4>
-        </div>
-        <!--Body-->
-        <div class="modal-body portfolio-info">
-          <p>Informació del projecte:</p>
+        <nav id="navbar" class="navbar">
           <ul>
-            <li><strong>Category</strong> <span>Imatge interior</span></li>
-            <li><strong>Client</strong> <span>La Fusteria</span></li>
-            <li><strong>Data</strong> <span>01/12/2022</span></li>
-            <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-            <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+            <li><a href="index.html" class="active">Inici</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="about.html">Sobre mi</a></li>
+            <li><a href="services.html">Serveis</a></li>
+            <li><a href="contact.html">Contacte</a></li>
           </ul>
+        </nav><!-- .navbar -->
+
+        <div class="header-social-links">
+          <a href="https://www.linkedin.com/in/neus-limeres/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
         </div>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
       </div>
-    </div>
+    </header>
+
+    <video autoplay muted loop id="background-video">
+      <source src="assets/img/portfolio/Portada/Portada.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- ======= PORTADA ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <h1>Neus Limeres</h1>
+        <h2>Projectes de Visualització Arquitectònica</h2>
+      </div>
+    </section>
+    
+      <!-- ======= Footer ======= -->
+      <footer id="footer" class="footer" style="margin-top: 0;">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Neus Limeres</span></strong>. All Rights Reserved
+          </div>
+
+        </div>
+      </footer><!-- End Footer -->
+
   </div>
-
-  <div class="modal fade right" id="info-fusteria-logo" tabindex="-1" role="dialog" aria-labelledby=""
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <h4>Logo La Fusteria</h4>
-        </div>
-        <!--Body-->
-        <div class="modal-body portfolio-info">
-          <p>
-            Logotip de la marca de cervesa artesana "La Fusteria de l'Avi Miquel",
-            dissenyat per <a href="https://www.merakibypaula.com/" target="_blank">Meraki by Paula</a>
-            <a href="https://www.instagram.com/merakibypaula/" class="instagram" target="_blank"><i
-                class="bi bi-instagram"></i></a>.
-          </p>
-          <p>Informació del projecte:</p>
-          <ul>
-            <li><strong>Categoria</strong> <span>Animació de logotip</span></li>
-            <li><strong>Data</strong> <span>01/12/2022</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade right" id="info-fusteria-cerveses" tabindex="-1" role="dialog" aria-labelledby=""
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <h4>Cerveses La Fusteria</h4>
-        </div>
-        <!--Body-->
-        <div class="modal-body portfolio-info">
-          <p>Informació del projecte:</p>
-          <ul>
-            <li><strong>Category</strong> <span>Imatge interior</span></li>
-            <li><strong>Client</strong> <span>La Fusteria</span></li>
-            <li><strong>Data</strong> <span>01/12/2022</span></li>
-            <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-            <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade right" id="info-faixa-cerveses" tabindex="-1" role="dialog" aria-labelledby=""
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <h4>Cerveses La Faixa</h4>
-        </div>
-        <!--Body-->
-        <div class="modal-body portfolio-info">
-          <p>Informació del projecte:</p>
-          <ul>
-            <li><strong>Category</strong> <span>Imatge interior</span></li>
-            <li><strong>Client</strong> <span>La Fusteria</span></li>
-            <li><strong>Data</strong> <span>01/12/2022</span></li>
-            <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-            <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade right" id="info-faixa-logo" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <h4>Logo La Faixa</h4>
-        </div>
-        <!--Body-->
-        <div class="modal-body portfolio-info">
-          <p>Informació del projecte:</p>
-          <ul>
-            <li><strong>Category</strong> <span>Imatge interior</span></li>
-            <li><strong>Client</strong> <span>La Fusteria</span></li>
-            <li><strong>Data</strong> <span>01/12/2022</span></li>
-            <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-            <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-    <!-- ======= PORTFOLIO ======= -->
-    <section id="gallery" class="gallery">
-
-      <div class="container-fluid">
-        <div class="row gy-4 justify-content-center">
-
-          <!-- ======= LA FUSTERIA ======= -->
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 35vw">
-              <img src="assets/img/portfolio/CAM 1. Carrer .png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 1. Carrer .png" title="La Fusteria" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 2 Principi carrer.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 2 Principi carrer.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 2 Carrer.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 2 Carrer.png" title="La Fusteria" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 3 Retol Fusteria .png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 3 Retol Fusteria .png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 40.3vw">
-              <img src="assets/img/portfolio/CAM. Pla cenital.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM. Pla cenital.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="col-12">
-              <div class="gallery-item h-100" style="max-height: 20vw">
-                <img src="assets/img/portfolio/CAM 8 Detall cafe.png" class="img-fluid" alt="">
-                <div class="gallery-links d-flex align-items-center justify-content-center">
-                  <p>La Fusteria</p>
-                  <a href="assets/img/portfolio/CAM 8 Detall cafe.png" title="La Fusteria"
-                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                  <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                    data-bs-target="#info-fusteria"></button>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="gallery-item h-100" style="max-height: 20vw; margin-top: 0.3vw;">
-                <img src="assets/img/portfolio/CAM. Detall espelma.png" class="img-fluid" alt="">
-                <div class="gallery-links d-flex align-items-center justify-content-center">
-                  <p>La Fusteria</p>
-                  <a href="assets/img/portfolio/CAM. Detall espelma.png" title="La Fusteria"
-                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                  <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                    data-bs-target="#info-fusteria"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 5 Pati zona interior .png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 5 Pati zona interior .png"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 4 Taules interiors pati.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 4 Taules interiors pati.png"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM 3 Pati general frontal.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM 3 Pati general frontal.png" 
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 30vw">
-              <img src="assets/img/portfolio/CAM Zona quadres.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM Zona quadres.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 30vw">
-              <img src="assets/img/portfolio/CAM Interior general.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM Interior general.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM. Vista superior.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM. Vista superior.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM Taules interiors.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM Taules interiors.png" title="La Fusteria"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM Interior.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>La Fusteria</p>
-                <a href="assets/img/portfolio/CAM Interior.png" title="La Fusteria" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria"></button>
-              </div>
-            </div>
-          </div>
-
-          <!-- ======= LA FAIXA ======= -->
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 33vw">
-              <img src="assets/img/portfolio/Logo La Faixa imatge.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Logo La Faixa</p>
-                <a href="assets/img/portfolio/Logo La Faixa imatge.png" title="Logo Cerveses La Faixa"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-faixa-logo"></button>
-              </div>
-            </div>
-          </div>
-
-          <!-- ======= FUSTERIA ======= -->
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="max-height: 33vw">
-              <img src="assets/img/portfolio/Logo La Fusteria 2.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Logo La Fusteria</p>
-                <a href="assets/img/portfolio/la_fusteria.mp4" title="Logo La Fusteria de l'Avi Miquel"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria-logo"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM.Cervesa  La Faixa.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Cerveses La Faixa</p>
-                <a href="assets/img/portfolio/CAM.Cervesa  La Faixa.png" title="Gallery 1"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-faixa-cerveses"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/CAM Cervesa La Faixa frontal.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Cerveses La Faixa</p>
-                <a href="assets/img/portfolio/CAM Cervesa La Faixa frontal.png" title="Gallery 1"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-faixa-cerveses"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Cervesa La Fusteria .png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Cerveses La Fusteria</p>
-                <a href="assets/img/portfolio/Cervesa La Fusteria .png" title="Gallery 1"
-                  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <button type="button" class="bi bi-info-circle" data-bs-toggle="modal"
-                  data-bs-target="#info-fusteria-cerveses"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Rebedor.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Rebedor</p>
-                <a href="assets/img/portfolio/Rebedor.mp4" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Fleca.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Fleca</p>
-                <a href="assets/img/portfolio/Fleca.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Bany bside .png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Bany Bside</p>
-                <a href="assets/img/portfolio/Bany bside .png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Cam 4.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Màster Terrasses</p>
-                <a href="assets/img/portfolio/Cam 4.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-                <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100" style="margin-top: 0;">
-              <img src="assets/img/portfolio/Cam 1.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Màster Terrasses</p>
-                <a href="assets/img/portfolio/Cam 1.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Cam 6.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Màster Terrasses</p>
-                <a href="assets/img/portfolio/Cam 6.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Cam 7.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Màster Terrasses</p>
-                <a href="assets/img/portfolio/Cam 7.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Bany petit cam 2.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Bany Màster Terrasses</p>
-                <a href="assets/img/portfolio/Bany petit cam 2.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Detall bany.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Bany Màster Terrasses</p>
-                <a href="assets/img/portfolio/Detall bany.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="gallery-item h-100">
-              <img src="assets/img/portfolio/Bany petit cam 1.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <p>Bany Màster Terrasses</p>
-                <a href="assets/img/portfolio/Bany petit cam 1.png" title="Gallery 1" class="glightbox preview-link"><i
-                    class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <h3>Neus Limeres</h3>
-      <p>Projectes de Visualització Arquitectònica</p>
-
-      <div class="copyright">
-        &copy; Copyright <strong><span>Neus Limeres</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader">
     <div class="line"></div>

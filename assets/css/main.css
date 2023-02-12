@@ -1,9 +1,3 @@
-/**
-* Template Name: PhotoFolio - v1.1.1
-* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
@@ -32,14 +26,65 @@
   scroll-behavior: smooth;
 }
 
+
+/*--------------------------------------------------------------
+# Work boxes in gallery
+--------------------------------------------------------------*/
+
+.box-shadow,
+.card-blog,
+.work-box,
+.service-box,
+.paralax-mf {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.work-box {
+  margin-bottom: 1rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.work-box:hover img {
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 1rem 3% 1rem 4%;
+}
+
+.w-title {
+  font-size: 1rem;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.mycontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
   /* background-color: #000; */
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 
 a {
@@ -103,27 +148,29 @@ h6 {
 # Page Header
 --------------------------------------------------------------*/
 .page-header {
-  padding: 120px 0 60px 0;
+  padding: 80px 0 0 0;
   min-height: 30vh;
   position: relative;
 }
 
 .page-header h2 {
-  font-size: 56px;
+  font-size: 65px;
   font-weight: bold;
   font-family: "Amatic SC", serif;
   color: var(--color-title);
   font-family: var(--font-secondary);
+  /* margin-bottom: 24px; */
 }
 
 @media (max-width: 768px) {
   .page-header h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
 .page-header p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--font-secondary);
+  margin-bottom: 8px;
 }
 
 .page-header .cta-btn {
@@ -168,7 +215,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -640,32 +687,23 @@ h6 {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.about .content h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-primary);
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
   color: var(--color-primary);
+  font-family: "Segoe UI", serif;
+  margin-bottom: 30px;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--color-primary);
-  line-height: 0;
+.about .content p {
+  font-size: 14px;
 }
 
 
@@ -1160,22 +1198,33 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* @media (max-width: 750px) {
+  #background-video { display: none; }
+  body {
+    background: url("../img/Neus.jpg") no-repeat;
+    background-size: cover;
+  }
+} */
+
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Neus.jpg") top right;
+  /* background: url("../img/Neus.jpg") top right; */
   background-size: cover;
   position: relative;
-}
-
-@media (max-width: 575px) {
-  #hero {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/Neus.jpg") top right -40vw;
-    background-size: cover;
-    position: relative;
-  }
 }
 
 #hero:before {
@@ -1198,8 +1247,8 @@ h6 {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  padding: 0 5vw;
-  margin-left: 5vw;
+  padding: 0 15px;
+  margin-left: 150px;
 }
 
 #hero h1 {
@@ -1246,7 +1295,7 @@ h6 {
   }
 
   #hero h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
   }
 }
@@ -1272,83 +1321,15 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-/* .hero {
-  width: 100%;
-  min-height: 30vh;
-  background: #000;
-  background-size: cover;
-  position: relative;
-  padding: 140px 0 60px 0;
-}
-
-.hero h2 {
-  margin: 0 0 10px 0;
-  font-size: 38px;
-  font-weight: 700;
-  color: #fff;
-  font-family: var(--font-secondary);
-}
-
-.hero h2 span {
-  position: relative;
-  z-index: 1;
-  padding: 0 5px;
-  display: inline-block;
-}
-
-.hero h2 span:before {
-  content: "";
-  position: absolute;
-  height: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--color-primary);
-  z-index: -1;
-}
-
-.hero p {
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-
-.hero .btn-get-started {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
-}
-
-.hero .btn-get-started:hover {
-  background: #2cbc85;
-}
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-} */
-
-/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  margin-top: 30px;
+  margin-top: 100px;
   padding: 30px 0;
   font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.15); */
   text-align: center;
-  background-color: hsl(210, 3%, 31%);
+  background-color: var(--color-default);
 }
 
 #footer h3 {
